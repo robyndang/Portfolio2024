@@ -172,6 +172,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         } else if (currentFill === 'rgb(255, 255, 255)') {
                             path.dataset.originalFill = currentFill;
                             path.style.fill = 'var(--black)';
+                        } else if (currentFill === 'rgb(62, 87, 45)' || currentFill === 'rgb(32, 32, 32)') {
+                            path.dataset.originalFill = currentFill;
+                            path.style.fill = 'var(--brand)';
                         }
                     });
                 } else {
@@ -183,6 +186,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     } else if (currentColor === 'rgb(255, 255, 255)') { // white
                         el.dataset.originalColor = 'white';
                         el.style.color = 'var(--black)';
+                    } else if (currentColor === 'rgb(62, 87, 45)' || currentColor === 'var(--link)') {
+                        el.dataset.originalColor = 'linkOrCustom';
+                        el.style.color = 'var(--brand)';
                     }
                 }
             });
@@ -206,6 +212,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         el.style.color = 'var(--black)';
                     } else if (originalColor === 'white') {
                         el.style.color = 'var(--white)';
+                    } else if (originalColor === 'linkOrCustom') {
+                        el.style.color = originalColor === 'link' ? 'var(--link)' : 'rgb(62, 87, 45)';
                     }
                 }
             });
@@ -240,6 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const hoverContainers = document.querySelectorAll('.image-container.hover');

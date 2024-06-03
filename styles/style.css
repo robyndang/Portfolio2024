@@ -211,12 +211,12 @@ small {
   font-style: normal;
 }
 
-.footer-sans-white {
+.footer-sans-link {
   font-family: var(--sans-serif), sans-serif;
   font-size: var(--font-size-footer);
   line-height: var(--line-height-footer);
   letter-spacing: var(--letter-spacing-footer);
-  color: var(--white);
+  color: var(--link);
   font-weight: 400;
   font-style: normal;
 }
@@ -226,7 +226,7 @@ small {
   font-size: var(--font-size-footer);
   line-height: var(--line-height-footer);
   letter-spacing: var(--letter-spacing-footer);
-  color: var(--white);
+  color: var(--link);
   font-weight: 400;
   font-style: normal;
 }
@@ -236,7 +236,7 @@ small {
   font-size: var(--font-size-footer-cs);
   line-height: var(--line-height-footer-cs);
   letter-spacing: var(--letter-spacing-footer-cs);
-  color: var(--black);
+  color: var(--link);
   font-weight: 400;
   font-style: normal;
 }
@@ -246,7 +246,7 @@ small {
   font-size: var(--font-size-footer-cs);
   line-height: var(--line-height-footer-cs);
   letter-spacing: var(--letter-spacing-footer-cs);
-  color: var(--black);
+  color: var(--link);
   font-weight: 400;
   font-style: normal;
   padding-right: clamp(4px, 0.2em, 16px);
@@ -265,7 +265,7 @@ small {
   letter-spacing: var(--letter-spacing-base);
   font-weight: 400;
   font-style: normal;
-  background-color: var(--brand);
+  background-color: var(--link);
   border-radius: var(--button);
   padding: 16px 32px;
   box-shadow: 5px 5px 10px rgba(40, 42, 43, 0.10);
@@ -992,7 +992,7 @@ section {
   border-radius: 0%;
   grid-area: contact;
   z-index: 200;
-  background: var(--brand);
+  background: var(--bone);
   padding: 48px 0 56px 0;
   gap: clamp(24px, 10em, 40px);
 }
