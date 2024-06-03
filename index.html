@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>Robyn Dang</title>
+  <meta name="title" content="Robyn Dang" />
+  <meta name="description" content="Toronto-based product designer finding the human touch in a pixelated world" />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="en_UK" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/" />
+  <meta property="og:title" content="Robyn Dang" />
+  <meta property="og:description"
+    content="Toronto-based product designer finding the human touch in a pixelated world" />
+  <meta property="og:image" content="https://imgur.com/1R6WwtW" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://robyndang.github.io/Portfolio/" />
+  <meta property="twitter:title" content="Robyn Dang" />
+  <meta property="twitter:description"
+    content="Toronto-based product designer finding the human touch in a pixelated world" />
+  <meta property="twitter:image" content="https://imgur.com/1R6WwtW" />
+
+  <!-- Open Graph / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/" />
+  <meta property="og:title" content="Robyn Dang" />
+  <meta property="og:description"
+    content="Toronto-based product designer finding the human touch in a pixelated world" />
+  <meta property="og:image" content="https://imgur.com/1R6WwtW" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/logo-brand-color.svg" />
+</head>
+
+<body>
+
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <header class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <div class="navbar-link">
+            <a href="index.html" class="navbar-link hover">
+              <span class="nav-text">Work</span>
+              <span class="nav-underline-text">case studies</span>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="hover"><a href="McGillDHB.html">Visualizing Housing Data</a></li>
+                <li class="hover"><a href="EWDesignSystem.html">Improving Internal Design System</a></li>
+                <li class="hover"><a href="Weverse.html">Boosting User Engagement</a></li>
+                <li class="hover"><a href="MPY.html">Increasing Volunteer Recruitment</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="About.html" class="navbar-link hover">
+            <span class="nav-text">About</span>
+            <span class="nav-underline-text">who i am</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <img src="img/logo.svg" alt="logo" class="logo">
+        </li>
+        <li class="navbar-item">
+          <a href="Play.html" class="navbar-link hover">
+            <span class="nav-text">Play</span>
+            <span class="nav-underline-text">Hobbies</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link hover">
+            <span class="nav-text">Email</span>
+            <span class="nav-underline-text">to collaborate</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html" title="work" class="active">
+          <span class="nav-text">Work</span>
+        </a>
+      </div>
+      <div class="hamburger-case-studies">
+        <div class="menu-item">
+          <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+            <span class="body-base">Visualizing Housing Data</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+            <span class="body-base">Improving Internal Design System</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="Weverse.html" title="Boosting User Engagement" class="active">
+            <span class="body-base">Boosting User Engagement</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+            <span class="body-base">Increasing Volunteer Recruitment</span>
+          </a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <span class="nav-text">About</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <span class="nav-text">Play</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link">
+          <span class="nav-text">Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-container">
+    <!-- !!!!!!!!!!! HEADER !!!!!!!!!!--->
+    <!-- mobile header -->
+    <div class="mobile-header">
+      <div id="flex-header-monet"
+        alt="Pointillism version of The Stroll, a painting by Claude Monet. The image is of a woman in a white dress holding a parasol on a sunny day">
+        <div id="monet">
+          <img src="img/claude-mobile.svg">
+        </div>
+      </div>
+      <div class="mobile-header-text">
+        <div class="h1-baseline-home">
+          <h1 class="XL-h1-serif">Robyn</h1>
+          <h1 class="XL-h1-sans-serif">Dang</h1>
+        </div>
+        <p>
+          Toronto-based product designer finding the human touch in a pixelated world
+        </p>
+      </div>
+    </div>
+
+    <!-- desktop-header -->
+    <div class="header">
+      <div class="hero-body">
+        <img src="img/Logo-brand-color.svg" alt="">
+        <p>Toronto-based product designer finding the human touch in a pixelated world</p>
+      </div>
+      <div id="flex-header-monet">
+        <div id="monet"
+          alt="Pointillism version of The Stroll, a painting by Claude Monet. The image is of a woman in a white dress holding a parasol on a sunny day">
+          <img src="img/claude01.svg" data-speed="-10" class="layer">
+          <img src="img/claude02.svg" data-speed="3" class="layer">
+          <img src="img/claude03.svg" data-speed="-4" class="layer">
+          <img src="img/claude04.svg" data-speed="12" class="layer">
+          <img src="img/claude05.svg" data-speed="-8" class="layer">
+          <img src="img/claude06.svg" data-speed="6" class="layer">
+        </div>
+        <div class="XL-h1-baseline">
+          <h1 class="XL-h1-serif">Robyn</h1>
+          <h1 class="XL-h1-sans-serif">Dang</h1>
+        </div>
+      </div>
+      <div class="hero-body">
+        <img src="img/Logo-brand-color-circle.svg" alt="">
+        <p>UX/UI Design
+          <br>Product Strategy
+        </p>
+      </div>
+    </div>
+
+    <!--!!!!!!!!!! CASE STUDY 1 !!!!!!!!!!--->
+    <div class="flex-case-1">
+      <div class="rect-case-1"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="McGillDHB.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/McGillDHB/MGL-Thumbnail.jpg" alt="" />
+            </div>
+            <small class="case-study-number">1/4</small>
+            <div class="h1-baseline-home hover">
+              <span class="h1-serif">
+                Visualizing
+              </span>
+              <span class="h1-sans-serif">
+                Housing Data
+              </span>
+            </div>
+          </div>
+        </a>
+        <div class="case-description">
+          <p>
+            to foster a sustainable future.
+          </p>
+          <div class="pill-container">
+            <div class="pill">
+              Website
+            </div>
+            <div class="pill">
+              McGill School of Architecture
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!!!!!!!!!! CASE STUDY 2 !!!!!!!!!!--->
+    <div class="flex-case-2">
+      <div class="rect-case-2"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="EWDesignSystem.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/EWDesignSystem/EWD-Thumbnail.jpg" alt="" />
+            </div>
+            <small class="case-study-number">2/4</small>
+            <div class="h1-baseline-home hover">
+              <span class="h1-serif">
+                Improving
+              </span>
+              <span class="h1-sans-serif">
+                Internal Design System
+              </span>
+            </div>
+          </div>
+        </a>
+        <div class="case-description">
+          <p>
+            to increase designer and developer productivity.
+          </p>
+          <div class="pill-container">
+            <div class="pill">
+              Design System
+            </div>
+            <div class="pill">
+              Evolving Web
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!!!!!!!!!! CASE STUDY 3 !!!!!!!!!!--->
+    <div class="flex-case-3">
+      <div class="rect-case-3"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="Weverse.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/Weverse/Thumbnail.jpg" alt="" />
+            </div>
+            <small class="case-study-number">3/4</small>
+            <div class="h1-baseline-home hover">
+              <span class="h1-serif">
+                Boosting
+              </span>
+              <span class="h1-sans-serif">
+                User Engagement
+              </span>
+            </div>
+          </div>
+        </a>
+        <div class="case-description">
+          <p>
+            making it the must-have app for kpop fans.
+          </p>
+          <div class="pill-container">
+            <div class="pill">
+              Mobile App
+            </div>
+            <div class="pill">
+              Weverse (self-initiated)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!!!!!!!!!! CASE STUDY 4 !!!!!!!!!!--->
+    <div class="flex-case-4">
+      <div class="rect-case-4"></div>
+      <div class="flex-fullspan-HOME">
+        <a href="MPY.html">
+          <div class="case-hover">
+            <div class="cs-thumbnail">
+              <img src="img/MPY/Thumbnail.jpg" alt="" />
+            </div>
+            <small class="case-study-number">4/4</small>
+            <div class="h1-baseline-home hover">
+              <span class="h1-serif">
+                Increasing
+              </span>
+              <span class="h1-sans-serif">
+                Volunteer Recruitment
+              </span>
+            </div>
+          </div>
+        </a>
+        <div class="case-description">
+          <p>
+            turning everyday heroes into the next generation of global peacemakers.
+          </p>
+          <div class="pill-container">
+            <div class="pill">
+              Landing Page
+            </div>
+            <div class="pill">
+              Million Peacemakers Youth
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--!!!!!!!!!! FOOTER !!!!!!!!!!--->
+    <div class="footer" id="footer">
+      <div class="footer-large-text">
+        <p class="footer-sans-black">Let's connect</p>
+        <div class="hover">
+          <a href="mailto:robyn.lou.dang@gmail.com" class="footer-baseline">
+            <div class="footer-email">
+              <span class="footer-sans-white" padding-bottom="16px">robyn.l.dang</span>
+              <span class="footer-serif">@gmail.com</span>
+            </div>
+            <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M53.2733 17.0699C53.2733 25.401 43.7275 34.0403 38 34.0403C32.2725 34.0403 22.7267 25.401 22.7267 17.0699C22.7267 8.73884 32.2725 0.0995789 38 0.0995789C43.7275 0.0995789 53.2733 8.73884 53.2733 17.0699Z"
+                fill="white" />
+              <path
+                d="M53.2733 58.9301C53.2733 67.2612 43.7275 75.9004 38 75.9004C32.2725 75.9004 22.7267 67.2612 22.7267 58.9301C22.7267 50.599 32.2725 41.9597 38 41.9597C43.7275 41.9597 53.2733 50.599 53.2733 58.9301Z"
+                fill="white" />
+              <path
+                d="M58.9301 53.2733C50.599 53.2733 41.9597 43.7275 41.9597 38C41.9597 32.2725 50.599 22.7267 58.9301 22.7267C67.2612 22.7267 75.9004 32.2725 75.9004 38C75.9004 43.7275 67.2612 53.2733 58.9301 53.2733Z"
+                fill="white" />
+              <path
+                d="M17.0699 53.2733C8.73883 53.2733 0.0995633 43.7275 0.0995636 38C0.0995638 32.2725 8.73883 22.7267 17.0699 22.7267C25.401 22.7267 34.0402 32.2725 34.0402 38C34.0402 43.7275 25.401 53.2733 17.0699 53.2733Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="hover">
+          <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-white">
+            LinkedIn
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+        <div class="hover">
+          <a href="https://drive.google.com/file/d/1tBFEi5O9QRtVIHv6xPkEQexWCgGxGB01/view?usp=sharing" target="_blank"
+            class="button-ghost-white">
+            Resume
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <small>©Copyright 2024 Robyn Dang ~ Designed and coded by yours truly</small>
+    </div>
+
+
+    <!--Linking to JavaScript here-->
+    <!-- <script src="scripts/butter.js"></script> -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

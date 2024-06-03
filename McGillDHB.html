@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>Robyn Dang</title>
+  <meta name="title" content="Visualizing Housing Data" />
+  <meta name="description"
+    content="Designing a web experience that visualizes Canada’s housing characteristics to foster a sustainable future." />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="en_UK" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/McGillDHB.html" />
+  <meta property="og:title" content="Visualizing Housing Data" />
+  <meta property="og:description"
+    content="Designing a web experience that visualizes Canada’s housing characteristics to foster a sustainable future." />
+  <meta property="og:image" content="https://i.imgur.com/oMVEUmX.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://robyndang.github.io/Portfolio/McGillDHB.html" />
+  <meta property="twitter:title" content="Visualizing Housing Data" />
+  <meta property="twitter:description"
+    content="Designing a web experience that visualizes Canada’s housing characteristics to foster a sustainable future." />
+  <meta property="twitter:image" content="https://i.imgur.com/oMVEUmX.jpg" />
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/logo-brand-color.svg" />
+</head>
+
+<body class="white">
+
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <header class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <div class="navbar-link">
+            <a href="index.html" class="navbar-link hover">
+              <span class="nav-text">Work</span>
+              <span class="nav-underline-text">case studies</span>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="hover"><a href="McGillDHB.html">Visualizing Housing Data</a></li>
+                <li class="hover"><a href="EWDesignSystem.html">Improving Internal Design System</a></li>
+                <li class="hover"><a href="Weverse.html">Boosting User Engagement</a></li>
+                <li class="hover"><a href="MPY.html">Increasing Volunteer Recruitment</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="About.html" class="navbar-link hover">
+            <span class="nav-text">About</span>
+            <span class="nav-underline-text">who i am</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <img src="img/logo.svg" alt="logo" class="logo">
+        </li>
+        <li class="navbar-item">
+          <a href="Play.html" class="navbar-link hover">
+            <span class="nav-text">Play</span>
+            <span class="nav-underline-text">Hobbies</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link hover">
+            <span class="nav-text">Email</span>
+            <span class="nav-underline-text">to collaborate</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html" title="work" class="active">
+          <span class="nav-text">Work</span>
+        </a>
+      </div>
+      <div class="hamburger-case-studies">
+        <div class="menu-item">
+          <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+            <span class="body-base">Visualizing Housing Data</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+            <span class="body-base">Improving Internal Design System</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="Weverse.html" title="Boosting User Engagement" class="active">
+            <span class="body-base">Boosting User Engagement</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+            <span class="body-base">Increasing Volunteer Recruitment</span>
+          </a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <span class="nav-text">About</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <span class="nav-text">Play</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link">
+          <span class="nav-text">Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+  <div class="banner-container no-shadow">
+    <img src="img/McGillDHB/Banner.jpg" alt="" />
+  </div>
+
+  <div class="wrapper">
+    <!-- CASE STUDY SIDE MENU -->
+    <div class="side-menu cs-side-menu-button">
+      <ul>
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Context">Context</a></li>
+        <li><a href="#Discover">Discover</a></li>
+        <li><a href="#Define">Define</a></li>
+        <li><a href="#DevelopDeliver">Develop & Deliver</a></li>
+        <li><a href="#VisualSystem">Visual System</a></li>
+        <li><a href="#Outcomes">Outcomes</a></li>
+        <li><a href="#Reflection">Reflection</a></li>
+        <li><a href="#Credits">Credits</a></li>
+      </ul>
+    </div>
+
+    <div class="page-container">
+
+      <section id="Overview">
+        <div class="h1-baseline">
+          <h1 class="h1-serif">
+            Visualizing
+          </h1>
+          <h1 class="h1-sans-serif">
+            Housing Data
+          </h1>
+        </div>
+        <div class="section-header">
+          <h2>Overview</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <p>
+                <b>Client:</b> McGill School of Architecture <br>
+                <b>Project type:</b> Data visualization website <br>
+                <b>Role:</b> UX/UI Designer<br>
+                <b>Team:</b> 2 UX/UI Designers, 1 design lead, 1 homepage art director, 2 PMs, multiple
+                engineers<br>
+                <b>Timeline:</b> 4 months ~ 2022<br>
+              </p>
+            </div>
+            <div class="right-column">
+              <p>With robust housing data in hand, McGill School of Architecture teamed up with us to <b>build a website
+                  for key players in the housing market.</b> How we designed complexity would determine whether these
+                vastly different industries could <b>align to foster a sustainable housing future.</b>
+                <br><br>
+                In collaboration with the team, I worked on several pages and played a <b>pivotal role in building out
+                  the design system, as well as prototyping for testing.</b> As a result, the final deliverable was met
+                with <b>unanimously positive feedback.</b>
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/Overview.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Context">
+        <div class="section-header">
+          <h2>context</h2>
+          <h3>Ground-breaking progress cannot be made without common ground</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The problem and objective</h4>
+            </div>
+            <div class="right-column">
+              <p>For Canadians to build more sustainable housing, homebuilders, financiers and policymakers
+                <b>required a shared
+                  understanding of housing data.</b> The problem was, each industry had their own way of communicating
+                so <b>essential
+                  knowledge was scattered, lacked standardization and was inaccessible to outsiders.</b>
+                <br><br>
+                That’s where we came in to research, strategize and design a web experience that would serve as a
+                homebase of
+                information for all three industries.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Challenges</h4>
+            </div>
+            <div class="right-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/money.svg" alt="">
+                </div>
+                <p class="body-large">Small budget</p>
+                <p>Pages had to be quickly prototyped and iterated for client feedback.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/grad-cap.svg" alt="">
+                </div>
+                <p class="body-large">Challenging subject matter</p>
+                <p>The information was complex and academic in language for both ourselves and users.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/search-globe.svg" alt="">
+                </div>
+                <p class="body-large">Few websites to reference</p>
+                <p>The subject matter was niche so there were few websites we could reference.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Discover">
+        <div class="section-header">
+          <h2>Discover</h2>
+          <h3>I don’t have to see the whole staircase to take the first step</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Making sense of the chaos</h4>
+            </div>
+            <div class="right-column">
+              <p>When the client provided us with whitepapers, <b>I was initially overwhelmed.</b> Linoleum floors
+                with a Eutrophication
+                Potential of 45.00 kg Neq? Stucco on CLT structure with a Global Warming Potential of 451.08 kg CO2eq?
+                Ummm... huh? The
+                clock was ticking, I was the last designer to be onboarded to the project, and I was lost.
+                <br><br>
+                So instead of getting stuck on the details, I thought about the big picture goals each user group had.
+                Using the
+                whitepapers, and findings gathered in a focus group conducted by our UX lead, <b>I created personas
+                  that would serve as
+                  my north star when designing.</b>
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/Persona1.jpg"
+              alt="
+            Title: Ashley Cho The Architect Persona. 
+            Basic Information: Ashley Cho is an architect in the homebuilding user group. She is 35 years old and is located in Montreal, Quebec. 
+            Quote: I want to design buildings that inspire others to adopt greener practices.
+            About: Ashley is an innovative architect with a deep commitment to designing sustainable buildings with repurposable and recycled materials. She values accurate and standardized data that increases the efficiency of her design process, and helps her achieve her ultimate goal: to contribute to a circular economy that leaves a positive impact on communities and the environment.
+            Goals: 
+            - Needs access to housing data that is standardized and reliable making for a more efficient design process.
+            - Needs a way to understand and compare the sustainability of materials.
+            - Wants to compare the sustainability of existing houses to inspire her own projects.
+            - Wants a convenient way to iterate building designs and compare their sustainability.
+            Frustrations:
+            - Wastes time gathering and standardizing data from multiple sources.
+            - Finds it challenging to receive funding and stakeholder buy-in without case studies and proof of concepts to reference.">
+          </div>
+          <div class=" image-container">
+            <img src="img/McGillDHB/Persona2.jpg"
+              alt="
+            Title: Dave Thompson The Financial Analyst.
+            Basic Information: Dave Thompson is a financial analyst in the financial industry user group. He is 40 years old and is located in Toronto, Ontario.
+            Quote: I want to enable sustainable home building through financing, but first, I need to understand the circular economy.
+            About: Dave is an experienced financial analyst working at one of the top banks in Canada. Housing and sustainability are relatively new concepts for him, but he is eager to understand the circular economy. He is hoping to incorporate green financing models that will forge a more affordable and sustainable housing future.
+            Goals: 
+            - Needs to understand the circular economy’s implications on affordable housing. 
+            - Needs comprehensible data to include green targets in internal property assessments and mortgage assessments. 
+            - Wants to enable risk reduction and future-proofing to boost investor confidence in the development of circular economy financing initiatives. 
+            - Wants to offer favorable financing rates for energy-efficient, low-carbon emission homes.
+            Frustrations: 
+            - Can’t understand the complex and highly academic documents about sustainable housing. 
+            - Doesn’t have case studies or proof of concepts to prove to investors sustainable housing is more cost-effective in the long run.">
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/Persona3.jpg"
+              alt="
+            Title: Karen Wilson The City Council Member.
+            Basic Information: Karen Wilson is a city council member in the government user group. She is 45 years old and is located in Vancouver, British Colombia. 
+            Quote: I'm determined to align our city's housing policies with global sustainability goals and reduce carbon emissions effectively.
+            About: Karen is an elected City Council Member in her community with a background in urban planning and public policy. Her current focus is on facilitating policy making and creating incentives to cut carbon emissions, monitor energy performance indicators, incentivize affordable housing, and support the alignment of building information with UN Sustainable Development Goals (SDGs).
+            Goals: 
+            - Needs to access comprehensive information about housing projects in her community. 
+            - Wants to create incentives for developers and builders to prioritize sustainability in their projects while keeping housing costs accessible for residents.
+            - Wants to better support the asset management of government-owned housing. Understanding the potential for reuse and circularity of building materials at the end of their lifecycle will help her make informed decisions on public property management.
+            Frustrations:
+            - Doesn’t have time to thoroughly research and gather information from multiple sources to make well-informed housing policy decisions.
+            - Encounters resistance in implementing ambitious sustainability goals and incentives due to budget constraints and the need for public buy-in.">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Define">
+        <div class="section-header">
+          <h2>Define</h2>
+          <h3>Design is more than decoration, it’s communication</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="full-column">
+              <p>
+                With user goals and pain points in mind, I decided on <b>three guiding principles.</b>
+              </p>
+            </div>
+          </div>
+
+          <div class="content-container">
+            <div class="columns">
+              <div class="left-column">
+                <h4>Design principles</h4>
+              </div>
+              <div class="right-column">
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/data-chart.svg" alt="">
+                  </div>
+                  <p class="body-large">Empower users</p>
+                  <p>to make sustainable decisions for their own building projects by <b>making complex data easier to
+                      understand, compare,
+                      analyze, and share.</b></p>
+                </div>
+
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/wayfind.svg" alt="">
+                  </div>
+                  <p class="body-large">Clearly communicate</p>
+                  <p>which features are most useful for each user group to <b>make wayfinding easier.</b></p>
+                </div>
+
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/pen.svg" alt="">
+                  </div>
+                  <p class="body-large">Modernize</p>
+                  <p>the UI to <b>differentiate it from other academic websites</b> that tend to look archaic, cluttered
+                    and text-heavy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Site architecture</h4>
+            </div>
+            <div class="right-column">
+              <p>With our three user groups in mind, we created a suitable site architecture with the <b>aim of
+                  directing users to the
+                  right features and tools for them.</b> It’s not pretty, but with a tight budget, it got the job
+                done.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/SiteArchitecture.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="DevelopDeliver">
+        <div class="section-header">
+          <h2>Develop & Deliver</h2>
+          <h3>Bridging the knowledge gap with design</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="full-column">
+              <p>After rounds of feedback and iteration, and a copy paste marathon to input scientifically correct
+                numbers, we
+                successfully delivered multiple pages. In this case study, I’ll only highlight the ones I collaborated
+                on.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The homepage effectively communicates the website’s purpose and features</h4>
+            </div>
+            <div class="right-column">
+              <p>The mockup from phase 1 was text-heavy, visually underwhelming and lacked CTAs. In phase 2, we use
+                stunning and
+                interactive animations created by myself and another designer to illustrate the capabilities of each
+                feature. Using CTAs
+                and active language, we redirect primary users to the most useful pages for them. <b>Please turn on your
+                  volume for all
+                  videos to listen to the rationale.</b></p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/HomepageBefore.jpg" alt="">
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899648330?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Homepage">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The housing map enables users to see building data at a city, neighbourhood, and property level</h4>
+            </div>
+            <div class="right-column">
+              <p>Key decision makers needed a way to efficiently compare and analyze up-to-date housing data, instead of
+                getting lost in
+                spreadsheets, so data is broken down into scales, tables, and graphs, which makes analysis easier.
+                Depending on the
+                filters applied, granularity of the data changes.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899648374?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Housing Map">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The housing passport presents building-specific data about affordability, energy performance, and
+                carbon performance</h4>
+            </div>
+            <div class="right-column">
+              <p>Using principles of design pertaining to typography, colour, and layout, we designed a housing passport
+                template with a
+                clear hierarchy making the data easy to scan. To avoid walls of text, info icons explain uncommon
+                terminology, and to
+                reduce scrolling, users can navigate to different sections using the sticky navigation bar.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899648401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Housing Passport">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Users can explore building materials and compare their environmental impacts at a glance</h4>
+            </div>
+            <div class="right-column">
+              <p>Instead of aggregating material data from multiple sources across the web, users can quickly compare
+                materials by the
+                standardized ratings displayed on cards, and filters allow users to find alternatives based on use case
+                and material
+                category. Users can even download a spreadsheet of selected materials with the most relevant metrics to
+                share with their
+                team.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899648413?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Materials">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Material passports provide detailed data about a material’s impact on health and the environment</h4>
+            </div>
+            <div class="right-column">
+              <p>The page structure follows the same format as the housing passport so users don’t need to relearn a new
+                page layout. To
+                help users find related materials, a carousel at the bottom of the page displays items based on related
+                use case and
+                material category. 
+                <br><br>The client requested a supplier map, which promotes buying materials locally, but budget
+                constraints prevented
+                us from building it. As a solution, we redirect users to prefilled Google Map searches, which offers
+                better search
+                functionality anyway.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/MaterialPassport.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>With design scenarios, users can design their own buildingse</h4>
+            </div>
+            <div class="right-column">
+              <p>Builders can design up to 3 buildings simultaneously using a form and compare them side-by-side to
+                understand their
+                impact on global warming. Edit, delete, and add designs easily for an enjoyable and informative
+                iterative process.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899648304?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Design Scenerios">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The glossary explains industry-specific terms that may be hard to understand from a web search  </h4>
+            </div>
+            <div class="right-column">
+              <p>The glossary acts as a common point of reference for users from three different industries. The words
+                are displayed in
+                the form of dropdown buttons for effortless page scanning which reduces scrolling and visual overwhelm.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/Glossary.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="VisualSystem">
+        <div class="section-header">
+          <h2>Visual System</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Where old meets new</h4>
+            </div>
+            <div class="right-column">
+              <p>We wanted the website to <b>embody the credibility of a respected educational institution,</b> while
+                also
+                <b>setting it
+                  apart from the drab textbook look of other academic websites.</b> Taking inspiration from
+                architectural
+                sites, and
+                architectural blueprints, we went for a modern and simple UI that makes use of clean lines for
+                illustrations.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/VisualSystem.jpg"
+              alt="Visual system displaying colours, iconography, typography, and animations used." />
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/880623010?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Visual System">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Outcomes">
+        <div class="section-header">
+          <h2>Outcomes</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Nothing but positive feedback</h4>
+            </div>
+            <div class="right-column">
+              <p>We were unable to run usability tests due to budget constraints, but a feedback session where 13 users
+                interacted with
+                the prototype was conducted. Feedback was affinity mapped, and we found that there were <b>no usability
+                  issues, and 100%
+                  of participants expressed positive feedback</b> about the user experience and UI design.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/McGillDHB/Outcomes.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="full-column">
+            <h4>What Our Users Had To Say</h4>
+          </div>
+          <div class="columns">
+            <div class="left-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/quote.svg" alt="">
+                </div>
+                <p class="body-large">
+                  Educational, exposes concepts on circular economy/material ecology that are normally
+                  quite complex to learn about.
+                </p>
+              </div>
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/quote.svg" alt="">
+                </div>
+                <p class="body-large">
+                  Concepts are explained in ways that are accessible to anyone.
+                </p>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/quote.svg" alt="">
+                </div>
+                <p class="body-large">
+                  The design of the website, and ease of interpretation, are current strengths.
+                </p>
+              </div>
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/quote.svg" alt="">
+                </div>
+                <p class="body-large">
+                  Very visual in terms of results, which
+                  makes it easier to understand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Reflection">
+        <div class="section-header">
+          <h2>Reflection</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Design for user needs, not wants</h4>
+            </div>
+            <div class="right-column">
+              <p>It’s important to <b>handle client expectations early on</b> to stay within budget. The client was
+                ambitious and wanted
+                a lot of features and functionality, but it was <b>our job to explain why we should only design for user
+                  needs</b>
+                rather than wants resulting in the most impactful solution.</p>
+              <br><br>
+              <div class="hover">
+                <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-green">
+                  Contact me for an in-depth case study presentation
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.1276 5.89008L19.1455 14.8771C19.1455 15.1653 19.0375 15.4174 18.8574 15.5975C18.6773 15.7776 18.4251 15.8857 18.137 15.8857C17.5607 15.8857 17.1104 15.4355 17.1104 14.8592V8.33949L6.5925 18.8573C6.19628 19.2536 5.54791 19.2536 5.15169 18.8573C4.75547 18.4612 4.75547 17.8128 5.15169 17.4165L15.6696 6.89864H9.1139C8.53761 6.89865 8.08734 6.44839 8.08734 5.87207C8.08734 5.29575 8.53761 4.84549 9.1139 4.84549L18.1009 4.8635C18.6773 4.8635 19.1455 5.33177 19.1276 5.89008Z"
+                      fill="#5D8243" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Credits">
+        <div class="section-header">
+          <h2>Credits</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="full-column">
+              <p>
+                <b>UX/UI Designers:</b> Robyn Dang (me), Katy Fernandez, Annika Oesar<br>
+                <b>Homepage Art Director:</b> Gregory Maslov <br>
+                <b>Design Lead:</b> Henk van Dijke<br>
+                <b>PM:</b> Marta Tarnavska<br>
+                <b>Technical PMs:</b> Xiway Banh and Olha Davdovych<br>
+                <b>Solutions Architect:</b> Franz Fernandes Vanderlinde<br>
+                <b>Lead Front-End Developer:</b> Diego Castro
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! NEXT CASE STUDY !!!!!!!!!!--->
+  <div class="next-case-study hover">
+    <div class="next-cs-thumbnail">
+      <img src="img/EWDesignSystem/EWD-Thumbnail.jpg" alt="">
+    </div>
+    <a href="EWDesignSystem.html">
+      <span class="footer-cs-serif">Improving</span>
+      <span class="footer-cs-sans">Internal Design System</span>
+    </a>
+    <div class="arrow-icon">
+      <svg width="180" height="auto" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M62.3176 101.059L93.0568 65.7471H16.9708V58.2528H93.1838L62.3176 22.9408H72.0982L107.029 61.9365L72.0982 101.059H62.3176Z"
+          fill="#202020" />
+      </svg>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! FOOTER !!!!!!!!!!--->
+  <div class="footer" id="footer">
+    <div class="footer-large-text">
+      <p class="footer-sans-black">Let's connect</p>
+      <div class="hover">
+        <a href="mailto:robyn.lou.dang@gmail.com" class="footer-baseline">
+          <div class="footer-email">
+            <span class="footer-sans-white" padding-bottom="16px">robyn.l.dang</span>
+            <span class="footer-serif">@gmail.com</span>
+          </div>
+          <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M53.2733 17.0699C53.2733 25.401 43.7275 34.0403 38 34.0403C32.2725 34.0403 22.7267 25.401 22.7267 17.0699C22.7267 8.73884 32.2725 0.0995789 38 0.0995789C43.7275 0.0995789 53.2733 8.73884 53.2733 17.0699Z"
+              fill="white" />
+            <path
+              d="M53.2733 58.9301C53.2733 67.2612 43.7275 75.9004 38 75.9004C32.2725 75.9004 22.7267 67.2612 22.7267 58.9301C22.7267 50.599 32.2725 41.9597 38 41.9597C43.7275 41.9597 53.2733 50.599 53.2733 58.9301Z"
+              fill="white" />
+            <path
+              d="M58.9301 53.2733C50.599 53.2733 41.9597 43.7275 41.9597 38C41.9597 32.2725 50.599 22.7267 58.9301 22.7267C67.2612 22.7267 75.9004 32.2725 75.9004 38C75.9004 43.7275 67.2612 53.2733 58.9301 53.2733Z"
+              fill="white" />
+            <path
+              d="M17.0699 53.2733C8.73883 53.2733 0.0995633 43.7275 0.0995636 38C0.0995638 32.2725 8.73883 22.7267 17.0699 22.7267C25.401 22.7267 34.0402 32.2725 34.0402 38C34.0402 43.7275 25.401 53.2733 17.0699 53.2733Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="hover">
+        <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-white">
+          LinkedIn
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+      <div class="hover">
+        <a href="https://drive.google.com/file/d/1tBFEi5O9QRtVIHv6xPkEQexWCgGxGB01/view?usp=sharing" target="_blank"
+          class="button-ghost-white">
+          Resume
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <small>©Copyright 2024 Robyn Dang ~ Designed and coded by yours truly</small>
+  </div>
+
+
+  <!--Linking to JavaScript here-->
+  <!-- <script src="scripts/butter.js"></script> -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

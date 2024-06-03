@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Robyn Dang</title>
+  <meta name="title" content="Boosting User Engagement" />
+  <meta name="description"
+    content="Redesigning a mobile app experience to boost user engagement and make Weverse the must-have app for k-pop fans." />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="en_UK" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/Weverse.html" />
+  <meta property="og:title" content="Boosting User Engagement" />
+  <meta property="og:description"
+    content="Redesigning a mobile app experience to boost user engagement and make Weverse the must-have app for k-pop fans." />
+  <meta property="og:image" content="https://i.imgur.com/rZZzyxj.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://robyndang.github.io/Portfolio/Weverse.html" />
+  <meta property="twitter:title" content="Boosting User Engagement" />
+  <meta property="twitter:description"
+    content="Redesigning a mobile app experience to boost user engagement and make Weverse the must-have app for k-pop fans." />
+  <meta property="twitter:image" content="https://i.imgur.com/rZZzyxj.jpg" />
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/logo-brand-color.svg" />
+</head>
+
+<body class="white">
+
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <header class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <div class="navbar-link">
+            <a href="index.html" class="navbar-link hover">
+              <span class="nav-text">Work</span>
+              <span class="nav-underline-text">case studies</span>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="hover"><a href="McGillDHB.html">Visualizing Housing Data</a></li>
+                <li class="hover"><a href="EWDesignSystem.html">Improving Internal Design System</a></li>
+                <li class="hover"><a href="Weverse.html">Boosting User Engagement</a></li>
+                <li class="hover"><a href="MPY.html">Increasing Volunteer Recruitment</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="About.html" class="navbar-link hover">
+            <span class="nav-text">About</span>
+            <span class="nav-underline-text">who i am</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <img src="img/logo.svg" alt="logo" class="logo">
+        </li>
+        <li class="navbar-item">
+          <a href="Play.html" class="navbar-link hover">
+            <span class="nav-text">Play</span>
+            <span class="nav-underline-text">Hobbies</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link hover">
+            <span class="nav-text">Email</span>
+            <span class="nav-underline-text">to collaborate</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html" title="work" class="active">
+          <span class="nav-text">Work</span>
+        </a>
+      </div>
+      <div class="hamburger-case-studies">
+        <div class="menu-item">
+          <a href="McGillDHB.html" title="Visualizing Housing Data" class="active">
+            <span class="body-base">Visualizing Housing Data</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="EWDesignSystem.html" title="Improving Internal Design System" class="active">
+            <span class="body-base">Improving Internal Design System</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="Weverse.html" title="Boosting User Engagement" class="active">
+            <span class="body-base">Boosting User Engagement</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="MPY.html" title="Increasing Volunteer Recruitment" class="active">
+            <span class="body-base">Increasing Volunteer Recruitment</span>
+          </a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about">
+          <span class="nav-text">About</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Play.html" title="play">
+          <span class="nav-text">Play</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link">
+          <span class="nav-text">Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+  <div class="banner-container no-shadow">
+    <img src="img/Weverse/Banner.jpg" alt="" />
+  </div>
+
+  <div class="wrapper">
+    <!-- CASE STUDY SIDE MENU -->
+    <div class="side-menu cs-side-menu-button">
+      <ul class="hover">
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Context">Context</a></li>
+        <li><a href="#Discover">Discover</a></li>
+        <li><a href="#Define">Define</a></li>
+        <li><a href="#DevelopDeliver">Develop & Deliver</a></li>
+        <li><a href="#Outcomes">Outcomes</a></li>
+        <li><a href="#Reflection">Reflection</a></li>
+      </ul>
+    </div>
+
+    <div class="page-container">
+
+      <section id="Overview">
+        <div class="h1-baseline">
+          <h1 class="h1-serif">
+            Boosting
+          </h1>
+          <h1 class="h1-sans-serif">
+            User Engagement
+          </h1>
+        </div>
+        <div class="section-header">
+          <h2>Overview</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <p>
+                <b>Client:</b> Self-initiated project<br>
+                <b>Project type:</b> Social media app<br>
+                <b>Role:</b> Sole product designer<br>
+                <b>Timeline:</b> 2 months ~ Q4 2021<br>
+              </p>
+            </div>
+            <div class="right-column">
+              <p>Weverse is a social media app that hosts multimedia content primarily from Kpop artists and fans.
+                <b>Weverse’s mission
+                  is to deepen artist and fan connections, regardless of language barriers, in the safety of their own
+                  online
+                  communities.</b><br><br>For this solo project, I gathered insights from app reviews and surveys to
+                define project
+                goals, built a prototype for usability testing, and <b>delivered a redesign that converted an ex-user,
+                  improved the
+                  experience for current users, and was intuitive for first time users.</b>
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/placeholder-landscape.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Context">
+        <div class="section-header">
+          <h2>Context</h2>
+          <h3>Falling short on features that were meant to set them apart</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The problem and objective</h4>
+            </div>
+            <div class="right-column">
+              <p>Weverse, marketed as a solution to language barriers between Korean artists and fans, disappoints users
+                with its
+                <b>hit-or-miss translation feature</b>. Despite restricting posts and comments to community members,
+                <b>online
+                  harassment persists</b>, lacking the expected positivity that would differentiate Weverse from other
+                social media
+                platforms. Moreover, <b>low fan-to-fan engagement causes users to swiftly check in on artists and exit
+                  the app</b>.
+                <br><br>
+                My objective was to research, strategize, and <b>design an experience that provides accurate
+                  translations, decreases
+                  online harassment, and increases fan-to-fan engagement</b> making Weverse the must-have app for fans.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/Weverse/ProblemObjective.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Discover">
+        <div class="section-header">
+          <h2>Discover</h2>
+          <h3>Journeying into the k-pop fan community</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Secondary research</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Three years into university and I’d developed a frugality unmatched by my peers; if I was going to spend
+                a single dollar
+                on user research, it’d be well-informed. And that’s why I decided to analyze 249 of Weverse’s top Apple
+                app store
+                reviews. To my surprise, <b>reducing harassment was the most suggested feedback, followed by separating
+                  western artists
+                  from Korean artists, and improving translations</b>.
+              </p>
+            </div>
+          </div>
+          <div class="image-container no-shadow">
+            <img src="img/Weverse/SecondaryResearch.png" alt="
+                        There are four app store reviews displayed: 
+                        User 1 who rated it 4 stars says 'Great app, but it's hard to get noticed plus recent...This app is fun, I just think it's really hard to get noticed. Also, I don't really understand the subscribing thing. If I subscribe to another fan, do their posts pop up in my feed more often?''
+                        
+                        User 2 rated it 1 star and wrote 'The Translation is so wrong. It would be nice if it could be corrected.'
+                        
+                        User 3 rated it 1 star and wrote 'Poorly moderated, racist users. Not only is this app poorly moderated, but the amount of reports I've done to the racist users who have said things to me as a black person on that app so far. For speaking up about black-'
+                        
+                        User 4 rated it 5 stars and wrote 'I think this app is pretty cool and helps communicate from fan to artist pretty well, though I'd love for a feature that would allow live streams as well as professional translators'
+                        
+                        A bar chart of the most suggested improvements from reviews is then displayed. The following data is ordered from most suggested to least suggested: 
+                        1. Reduce Harassment: 57 votes 
+                        2. Separate k-pop artists from western artists: 19 votes
+                        3. Improve translations: 14 votes
+                        4. Personalize feed: 13 votes
+                        5. Improve engagement: 13 votes
+                        6. Add dark mode: 12 votes
+                        7. Improve notifications: 10 votes
+                        8. Play video on TV: 9 votes
+                        9. Add livestream feature: 6 votes">
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>You have to speak their language... of memes</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                With these suggestions in mind, <b>I created a survey and distributed it into all fan communities on
+                  Weverse.</b> Initially,
+                few responded, but with the power of memes, I managed to get <b>161 responses</b>. The following
+                insights stood
+                out to me.
+              </p>
+            </div>
+          </div>
+          <div class="image-container no-shadow">
+            <img src="img/Weverse/SurveyMemes.png" alt="" />
+          </div>
+
+          <div class="full-column">
+            <h4>
+              Insights
+            </h4>
+          </div>
+          <div class="columns">
+            <div class="left-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/bell.svg" alt="">
+                </div>
+                <p class="body-large">28% don’t consider Weverse a social media app</p>
+                <p>They open the app just to see artist posts.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/pen.svg" alt="">
+                </div>
+                <p class="body-large">34% think posting is pointless</p>
+                <p>because of low engagement.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/translation.svg" alt="">
+                </div>
+                <p class="body-large">What users wanted to improve most</p>
+                <p>Users believe improving translations should be the top priority, followed by reducing harassment and
+                  adding dark mode.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/community.svg" alt="">
+                </div>
+                <p class="body-large">They were fans of a few</p>
+                <p>63% joined 1-4 fan communities.</p>
+              </div>
+            </div>
+
+            <div class="right-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/eyes.svg" alt="">
+                </div>
+                <p class="body-large">Core user tasks</p>
+                <p>Checking artist posts and updates is the top reason users check Weverse, followed by responding to
+                  other fan posts.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/clock.svg" alt="">
+                </div>
+                <p class="body-large">Average daily time spent</p>
+                <p>50% spend 15 minutes or less per day on the app.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/angry-face.svg" alt="">
+                </div>
+                <p class="body-large">Observed vs. experienced harassment</p>
+                <p>Although 36-40% said they witnessed harassment of artists and fellow fans, only 6% reported being
+                  harassed themselves.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="full-column">
+            <h4>
+              Empathy Map
+            </h4>
+            <p>
+              I made an empathy map to to summarize insights and emphasize crucial user needs.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="img/Weverse/EmpathyMap.jpg" alt="
+              An empathy map which details the goals, constraints, motivations, and frustrations of a primary user, as well as what they would typically say, think, do, and feel whiling using the Weverse App.
+              
+              Goals: 
+              - get replied from my favourite artists 
+              - connect with other fans 
+              - post interesting content to get engagement
+              
+              Constraints:
+              - my posts get buried by other posts
+              - other user posts aren't interesting enough for me to befriend them
+              - I don't know what to post, and posting feels pointless anyway
+
+              Motivations:
+              - forming connections with fans and bonding over their shared interests
+              - interacting with, and showing support for, my favourite artists
+
+              Frustrations: 
+              - seeing hateful posts towards artists in their own communities
+              - rarely getting replies or cheers (likes)
+
+              Says:
+              - I'll never get noticed by my favourite artist
+              - I have no idea what this translation means
+
+              Thinks:
+              - Weverse should be my safe space to be a fan
+              - This feed is so boring. It's just a bunch of spam
+
+              Does:
+              - translations are so poor I have to switch to Twitter to see fan translations
+              - spends a long time sifting through notifications because it's overwhelming
+
+              Feels: 
+              - ignored by both artists and other users
+              - confused by the interface 
+              - overhwlmed by irrelevant content">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Define">
+        <div class="section-header">
+          <h2>Define</h2>
+          <h3>Choosing the most impactful goals</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="full-column">
+              <h4>Goals</h4>
+              <p>
+                An impact/effort matrix was used to determine the following goals:
+              </p>
+            </div>
+          </div>
+
+          <div class="content-container">
+            <div class="columns">
+              <div class="left-column">
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/shield.svg" alt="">
+                  </div>
+                  <p class="body-large">Reduce online harassment.</p>
+                </div>
+
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/translation.svg" alt="">
+                  </div>
+                  <p class="body-large">Provide accurate and easy-to-access translations.</p>
+                </div>
+              </div>
+
+              <div class="right-column">
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/community.svg" alt="">
+                  </div>
+                  <p class="body-large">Increase engagement to build strong fan communities.</p>
+                </div>
+
+                <div class="icon-card">
+                  <div class="icon">
+                    <img src="img/pen.svg" alt="">
+                  </div>
+                  <p class="body-large">Make UI more intuitive and usable.</p>
+                </div>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="img/Weverse/ImpactEffortMatrix.jpg" alt="
+            A diagram which was used to determine goals. There are four quadrants mapped on the vertical line of high Impact (reach, value, revenue) and the horizontal line of low effort required by organization to implement. These will be shortened to 'high impact' and 'low effort' from here on. 
+
+            Quad 1: 
+            High impact, low effort means these goals are great
+            Reduce harassment, Improve engagement, Make UI more usable and intuitive
+
+
+            Quad 2: 
+            High impact, high effort means these goals are good 
+            Personalize feed, Improve translations, Improve notifications
+
+
+            Quad 3: 
+            Low impact, low effort means these goals are OK 
+            Separate western artists, Dark mode 
+
+            Quad 4: 
+            Low impact, high effort means these goals are BAD
+            Play video on TV, Add livestreaming
+            ">
+            </div>
+          </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="DevelopDeliver">
+        <div class="section-header">
+          <h2>Develop & Deliver</h2>
+          <h3>A must-have app for k-pop fans</h3>
+        </div>
+
+        <div class="content-container">
+          <div class="image-container">
+            <img src="img/weverse/Develop.jpg" alt="sketches">
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Usability testing</h4>
+            </div>
+            <div class="right-column">
+              <p>Multiple pages were prototyped for <b>qualitative usability tests on two first-time users, six current
+                  users, and one
+                  previous user of Weverse</b> resulting in the final features.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/weverse/UserTesting.jpg" alt="screenshot of usability test">
+          </div>
+        </div>
+
+        <div class="content-container">
+          <h3>
+            Reducing Online Harassment
+          </h3>
+          <div class="columns">
+            <div class="left-column">
+              <h4>Hide Sensitive Content</h4>
+            </div>
+            <div class="right-column">
+              <p>Before: Many users mentioned being reported then banned from Weverse after expressing a different
+                opinion. Due to
+                Weverse’s tedious appeals process, they weren’t able to get their accounts back. <br><br>After: Instead
+                of banning
+                users, sensitive posts are hidden and only after reaching an even higher number of reports are users
+                banned.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/Weverse/SensitiveContent.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Block user</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: 36-40% of survey respondents said they witnessed harassment of artists and fellow
+                fans. <br><br>After: This
+                feature ensures users never have to interact with online bullies again. It allows them to curate what
+                they wish to see
+                without unnecessarily reporting other users. <b>Please turn on your volume for all videos to listen to
+                  the
+                  rationale</b>.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833557?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Block user">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Language filter</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: Users from different cultures disagreed about what should be posted on community feeds leading
+                to conflict that
+                had to be addressed by the Weverse team. Additionally, users had to trouble themselves by sifting
+                through posts they
+                didn’t understand. <br><br>After: I added a “Language” filter for community feeds.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833644?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Language filter">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <h3>
+            Increasing engagement to build strong fan communities
+          </h3>
+          <div class="columns">
+            <div class="left-column">
+              <h4>Viewable homepage content</h4>
+            </div>
+            <div class="right-column">
+              <p>Before: Users can only view content on the homepage from communities they’ve already joined, making it
+                useless as a
+                promotional tool.<br><br>After: Users can view all content regardless of membership, but comments are
+                restricted to
+                community members only. This provides exposure to artists, while preserving the quality of users within
+                each community.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833695?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Viewable homepage content">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Daily question poll</h4>
+            </div>
+            <div class="right-column">
+              <p>Before: The community feed is uninteresting because many users don’t know what to post.
+
+                <br><br>
+                After: Users can engage in community-wide discussions by participating in the daily question poll.
+                Voting requires
+                minimal effort, and users can also write responses and post to the feed. This daily activity motivates
+                fans to regularly
+                open the app, and there’s the added excitement of seeing what their artists voted for too.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833602?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Daily question poll">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>View followers</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: Weverse uses subscriptions/subscribers instead of following/followers which is confusing for
+                English speakers.
+                Moreover, users can only see their subscriptions (who they're following).
+                <br><br>
+                After: The copy is changed to following/followers, and users can see their followers in case they wish
+                to become mutuals
+                increasing fan-to-fan engagement.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833666?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="View followers">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <h3>
+            Providing accurate and easy-to-access translations
+          </h3>
+          <div class="columns">
+            <div class="left-column">
+              <h4>Add to list</h4>
+            </div>
+            <div class="right-column">
+              <p>Before: Users reported switching to Twitter to view fan translations whenever Weverse’s built-in
+                translation feature was
+                inadequate.
+
+                <br><br>
+                After: By allowing users to sort who they're following into lists, they can easily navigate to
+                translator profiles
+                in-app.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833499?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Add to list">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Following Page</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: Users didn’t understand what the purpose of following other fans was since it seemed to have no
+                effect on the
+                posts they’re shown.
+
+
+                <br><br>
+                After: Users can view posts from those they follow on the Following page. This way, they can view fan
+                translations in a
+                timely manner and deepen fan-to-fan connections. Knowing followers will see their posts will also
+                encourage posting
+                thoughtful content.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/Weverse/FollowingPage.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="content-container">
+          <h3>
+            Making the UI more intuitive and usable
+          </h3>
+          <div class="columns">
+            <div class="left-column">
+              <h4>Community</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: Users were confused about how to switch between communities because the dropdown button looked
+                like a
+                verification checkmark. In addition, the profile pictures incorrectly implied users could click into
+                individual artist
+                profiles.
+                <br><br>The UI of artist moments (stories) at the top of the community feed had text that was hard to
+                read since they
+                were on top of images, and the rectangle images didn't give users a good idea of what they'd be clicking
+                into. Artist
+                moments were also redundantly repeated in a different UI on the artist feed.
+                <br><br>After: An image banner replaces the confusing multiple profile pictures, and one profile picture
+                containing an
+                artist’s logo is used to afford switching between artist communities.  
+                <br><br>Only 16% of users reported using the Discover page often, so I removed it from the main
+                navigation and placed a
+                global community search at the top instead.
+                <br><br>Artist moments only live on the artist feeds as it makes more sense there and allows room for
+                the poll on the
+                community feed. The UI was changed for better readibility and clarity.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833581?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Community">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Joining Communities</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: There was no search functionality so users had to horizontally scroll through 30+ community
+                cards.
+
+
+                <br><br>
+                After: Users can filter between Korean and International artist communities, and search for specific
+                names using the
+                search bar.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/893833619?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Joining Communities">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Separate notifications</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Before: Whenever artists go on a reply spree, their notifications get lost among personal activity
+                notifications. As we
+                know, users mainly check Weverse to see artist posts and interactions with other users.
+
+
+                <br><br>
+                After: I separated the notifications into Artist and My Activity. Only 12% of users reported joining
+                more than 7
+                communities, so it isn't overwhelming to filter by community.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/Weverse/Notifications.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Outcomes">
+        <div class="section-header">
+          <h2>Outcomes</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/smiley-face.svg" alt="">
+                </div>
+                <p>The ex-user participant said they would download Weverse again if these improvements were
+                  implemented.</p>
+              </div>
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/sparkling-heart.svg" alt="">
+                </div>
+                <p>All six of the current users prefer the redesign to the original. They believe it solves the issues
+                  they had with
+                  Weverse, and stated they’d spend more time on the app if improvements were applied.</p>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/sparkling-heart.svg" alt="">
+                </div>
+                <p>Both first time users found the redesign intuitive to use overall, and believed the added features
+                  would make for a more
+                  engaging experience.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Reflection">
+        <div class="section-header">
+          <h2>Reflection</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>
+                If I could redo it, I'd choose a more quantifiable metric
+              </h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Since this was my first ever product design project, I failed to consider some factors. If I
+                could redo the
+                usability tests, I would include a Net Promoter Score, instead of asking open ended questions to measure
+                how much they
+                liked the new features. In future projects, to have a clearer, and more quantifiable result of user
+                experiences, I would
+                choose an appropriate metric in the testing phase.
+              </p>
+              <div class="hover">
+                <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-green">
+                  Contact me for an in-depth case study presentation
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.1276 5.89008L19.1455 14.8771C19.1455 15.1653 19.0375 15.4174 18.8574 15.5975C18.6773 15.7776 18.4251 15.8857 18.137 15.8857C17.5607 15.8857 17.1104 15.4355 17.1104 14.8592V8.33949L6.5925 18.8573C6.19628 19.2536 5.54791 19.2536 5.15169 18.8573C4.75547 18.4612 4.75547 17.8128 5.15169 17.4165L15.6696 6.89864H9.1139C8.53761 6.89865 8.08734 6.44839 8.08734 5.87207C8.08734 5.29575 8.53761 4.84549 9.1139 4.84549L18.1009 4.8635C18.6773 4.8635 19.1455 5.33177 19.1276 5.89008Z"
+                      fill="#5D8243" />
+                  </svg> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! NEXT CASE STUDY !!!!!!!!!!--->
+  <div class="next-case-study hover">
+    <div class="next-cs-thumbnail">
+      <img src="img/MPY/Thumbnail.jpg" alt="">
+    </div>
+    <a href="MPY.html">
+      <span class="footer-cs-serif">Increasing</span>
+      <span class="footer-cs-sans">Volunteer Recruitment</span>
+    </a>
+    <div class="arrow-icon">
+      <svg width="180" height="auto" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M62.3176 101.059L93.0568 65.7471H16.9708V58.2528H93.1838L62.3176 22.9408H72.0982L107.029 61.9365L72.0982 101.059H62.3176Z"
+          fill="#202020" />
+      </svg>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! FOOTER !!!!!!!!!!--->
+  <div class="footer" id="footer">
+    <div class="footer-large-text">
+      <p class="footer-sans-black">Let's connect</p>
+      <div class="hover">
+        <a href="mailto:robyn.lou.dang@gmail.com" class="footer-baseline">
+          <div class="footer-email">
+            <span class="footer-sans-white" padding-bottom="16px">robyn.l.dang</span>
+            <span class="footer-serif">@gmail.com</span>
+          </div>
+          <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M53.2733 17.0699C53.2733 25.401 43.7275 34.0403 38 34.0403C32.2725 34.0403 22.7267 25.401 22.7267 17.0699C22.7267 8.73884 32.2725 0.0995789 38 0.0995789C43.7275 0.0995789 53.2733 8.73884 53.2733 17.0699Z"
+              fill="white" />
+            <path
+              d="M53.2733 58.9301C53.2733 67.2612 43.7275 75.9004 38 75.9004C32.2725 75.9004 22.7267 67.2612 22.7267 58.9301C22.7267 50.599 32.2725 41.9597 38 41.9597C43.7275 41.9597 53.2733 50.599 53.2733 58.9301Z"
+              fill="white" />
+            <path
+              d="M58.9301 53.2733C50.599 53.2733 41.9597 43.7275 41.9597 38C41.9597 32.2725 50.599 22.7267 58.9301 22.7267C67.2612 22.7267 75.9004 32.2725 75.9004 38C75.9004 43.7275 67.2612 53.2733 58.9301 53.2733Z"
+              fill="white" />
+            <path
+              d="M17.0699 53.2733C8.73883 53.2733 0.0995633 43.7275 0.0995636 38C0.0995638 32.2725 8.73883 22.7267 17.0699 22.7267C25.401 22.7267 34.0402 32.2725 34.0402 38C34.0402 43.7275 25.401 53.2733 17.0699 53.2733Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="hover">
+        <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-white">
+          LinkedIn
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+      <div class="hover">
+        <a href="https://drive.google.com/file/d/1tBFEi5O9QRtVIHv6xPkEQexWCgGxGB01/view?usp=sharing" target="_blank"
+          class="button-ghost-white">
+          Resume
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <small>©Copyright 2024 Robyn Dang ~ Designed and coded by yours truly</small>
+  </div>
+
+
+  <!--Linking to JavaScript here-->
+  <!-- <script src="scripts/butter.js"></script> -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --serif: newsreader;
+  --sans-serif: cabin;
+
+  /* Font sizes */
+  /*headers*/
+  --font-size-XL-h1: clamp(72px, 10vw + 50px, 180px);
+  --font-size-h1: clamp(40px, 3vw + 35px, 98px);
+  --font-size-h2: clamp(16px, 1.5vw + 10px, 22px);
+  --font-size-h3: clamp(30px, 3vw + 14px, 44px);
+  --font-size-h4: clamp(20px, 2vw + 10px, 30px);
+  /*body*/
+  --font-size-base: clamp(16px, 1.5vw + 8px, 20px);
+  --font-size-small: clamp(12px, 1vw + 4px, 14px);
+  --font-size-large: clamp(18px, 2vw + 6px, 24px);
+  /*button*/
+  --font-size-side-menu: clamp(12px, 1vw + 2px, 14px);
+  --font-size-nav: clamp(20px, 2.5vw + 10px, 30px);
+  --font-size-nav-underline: clamp(12px, 1vw + 2px, 14px);
+  /*footer*/
+  --font-size-footer: clamp(40px, 3vw + 35px, 98px);
+  --font-size-footer-cs: clamp(25px, 2vw + 25px, 88px);
+
+
+
+  /* Line height */
+  /*headers*/
+  --line-height-XL-h1: clamp(75px, 10vw, 100px);
+  --line-height-h1: clamp(48px, 8vw, 100px);
+  --line-height-h2: auto;
+  --line-height-h3: clamp(40px, 5vw, 66px);
+  --line-height-h4: clamp(30px, 3vw, 45px);
+  /*body*/
+  --line-height-base: clamp(28px, 2.8vw, 34px);
+  --line-height-small: auto;
+  --line-height-large: clamp(32px, 3.2vw, 40px);
+  /*button*/
+  --line-height-side-menu: auto;
+  --line-height-nav: auto;
+  --line-height-nav-underline: auto;
+  /*footer*/
+  --line-height-footer: auto;
+  --line-height-footer-cs: auto;
+
+  /* Letter spacing */
+  /* Headings */
+  --letter-spacing-h1-sans: clamp(-0.3px, -0.03vw, -0.24px);
+  --letter-spacing-h1-serif: clamp(-1px, -0.1vw, -0.8px);
+  --letter-spacing-h2: clamp(0.5px, 0.05vw, 0.64px);
+  --letter-spacing-h3: clamp(-1px, -0.1vw, -0.8px);
+  --letter-spacing-h4: clamp(0.02px, 0.002vw, 0.04px);
+  /* Body */
+  --letter-spacing-base: clamp(0.06px, 0.006vw, 0.08px);
+  --letter-spacing-small: clamp(0.06px, 0.006vw, 0.08px);
+  --letter-spacing-large: clamp(0.06px, 0.006vw, 0.08px);
+  /* Button */
+  --letter-spacing-side-menu: clamp(0.1px, 0.01vw, 0.2px);
+  --letter-spacing-nav: clamp(0.02px, 0.002vw, 0.04px);
+  --letter-spacing-nav-underline: clamp(0.1px, 0.01vw, 0.2px);
+  /* Footer */
+  --letter-spacing-footer: clamp(-0.3px, -0.03vw, -0.24px);
+  --letter-spacing-footer-cs: clamp(-0.3px, -0.03vw, -0.24px);
+
+  /* Colors */
+  --cream: #edeceb;
+  --cream-80: rgba(237, 236, 235, 0.8);
+  --bone: #f8f6f5;
+  --divider: #b7b7b7;
+  --black: #202020;
+  --stone: #52666e;
+  --stone-75: rgba(82, 102, 110, 0.75);
+  --brand: #72a242;
+  --brand-hover: #88b15f;
+  --link: #5d8243;
+  --white: #ffffff;
+  --dune: #c0bcb8;
+  --sand: #e7e3df;
+  --sand-80: rgba(231, 227, 223, 0.8);
+
+  /* Gaps */
+  --gap-page-container: clamp(40px, 6vw, 80px);
+  --gap-cs-content: clamp(60px, 6vw, 80px);
+  --gap-cs-section: clamp(32px, 4vw, 56px);
+  --gap-section-header: clamp(12px, 1.2vw, 16px);
+  --gap-section-content: clamp(20px, 2vw, 24px);
+  --gap-section-cards: clamp(24px, 2.4vw, 32px);
+  --gap-content-container: clamp(24px, 3.2vw, 40px);
+  --gap-columns: clamp(16px, 3.2vw, 40px);
+
+  /* Gutters */
+  --gutter-section-content: clamp(32px, 3.2vw, 40px);
+  --gutter-section-cards: clamp(24px, 2.4vw, 32px);
+
+  /* Paddings */
+  --padding-flex-case: clamp(32px, 5vw + 1rem, 80px);
+  --padding-page-container: clamp(24px, 5vw + 1rem, 100px);
+  --padding-cs-content-top-bottom: clamp(80px, 8vw, 100px);
+  --padding-columns-other-pages: clamp(32px, 10vw, 72px);
+  --padding-content-container: clamp(16px, 4vw, 32px);
+
+  /* Margins */
+  --margin-page-container: clamp(16px, 2vw + 1.5rem, 120px);
+
+  /* Border radiuses */
+  --br-cs-rounded-bg: clamp(800px, 80vw, 1000px);
+  --br-img: clamp(12px, 2vw, 24px);
+  --br-pill: clamp(40px, 4vw, 50px);
+  --button: clamp(80px, 8vw, 100px);
+}

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Robyn Dang</title>
+  <meta name="title" content="Increasing Volunteer Recruitment" />
+  <meta name="description"
+    content="Designing a website to convert everyday heroes into the next generation of global peacemakers." />
+  <meta property="og:locale" content="en_CA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="en_UK" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robyndang.github.io/Portfolio/MPY.html" />
+  <meta property="og:title" content="Increasing Volunteer Recruitment" />
+  <meta property="og:description"
+    content="Designing a website to convert everyday heroes into the next generation of global peacemakers." />
+  <meta property="og:image" content="https://i.imgur.com/7uigf9U.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://robyndang.github.io/Portfolio/MPY.html" />
+  <meta property="twitter:title" content="Increasing Volunteer Recruitment" />
+  <meta property="twitter:description"
+    content="Designing a website to convert everyday heroes into the next generation of global peacemakers." />
+  <meta property="twitter:image" content="https://i.imgur.com/7uigf9U.jpg" />
+
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg" href="img/logo-brand-color.svg" />
+</head>
+
+<body class="white">
+
+  <!-- !!!!!!!!!!! NAVBAR !!!!!!!!!!--->
+  <header class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <div class="navbar-link">
+            <a href="index.html" class="navbar-link hover">
+              <span class="nav-text">Work</span>
+              <span class="nav-underline-text">case studies</span>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-list">
+                <li class="hover"><a href="McGillDHB.html">Visualizing Housing Data</a></li>
+                <li class="hover"><a href="EWDesignSystem.html">Improving Internal Design System</a></li>
+                <li class="hover"><a href="Weverse.html">Boosting User Engagement</a></li>
+                <li class="hover"><a href="MPY.html">Increasing Volunteer Recruitment</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="About.html" class="navbar-link hover">
+            <span class="nav-text">About</span>
+            <span class="nav-underline-text">who i am</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <img src="img/logo.svg" alt="logo" class="logo">
+        </li>
+        <li class="navbar-item">
+          <a href="Play.html" class="navbar-link hover">
+            <span class="nav-text">Play</span>
+            <span class="nav-underline-text">Hobbies</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link hover">
+            <span class="nav-text">Email</span>
+            <span class="nav-underline-text">to collaborate</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- !!!!!!!!!!! HAMBURGER MENU FOR MOBILE !!!!!!!!!!--->
+  <div class="hamburger-container">
+    <span class="menu-icon" id="hamburgerbtn" onclick="openMenu()"><img src="img/hamburger-06.svg"
+        alt="hamburger menu button" /></span>
+  </div>
+
+  <div class="menu-container" id="hamburgermenu">
+    <span class="closebtn" id="hamburgerbtn" onclick="closeMenu()"><img src="img/close-14.svg"
+        alt="close hamburger menu"></span>
+
+    <div class="menu-column">
+      <div class="menu-item">
+        <a href="index.html" title="work" class="hover">
+          <span class="nav-text">Work</span>
+        </a>
+      </div>
+      <div class="hamburger-case-studies">
+        <div class="menu-item">
+          <a href="McGillDHB.html" title="Visualizing Housing Data" class="body-base hover">
+            Visualizing Housing Data
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="EWDesignSystem.html" title="Improving Internal Design System" class="body-base hover">
+            Improving Internal Design System
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="Weverse.html" title="Boosting User Engagement" class="body-base hover">
+            Boosting User Engagement
+          </a>
+        </div>
+        <div class="menu-item">
+          <a href="MPY.html" title="Increasing Volunteer Recruitment" class="body-base hover">
+            Increasing Volunteer Recruitment
+          </a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="About.html" title="about" class="hover">
+          <span class="nav-text">About</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="Play.html" title="play" class="hover">
+          <span class="nav-text">Play</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="mailto:robyn.l.dang@gmail.com" target="_blank" class="navbar-link hover">
+          <span class="nav-text">Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! CONTENT !!!!!!!!!!--->
+  <div class="banner-container no-shadow">
+    <img src="img/MPY/Banner.jpg" alt="" />
+  </div>
+
+  <div class="wrapper">
+    <!-- CASE STUDY SIDE MENU -->
+    <div class="side-menu cs-side-menu-button">
+      <ul class="hover">
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Context">Context</a></li>
+        <li><a href="#Empathize">Empathize</a></li>
+        <li><a href="#Conceptualize">Conceptualize</a></li>
+        <li><a href="#Design">Design</a></li>
+        <li><a href="#Deliver">Deliver</a></li>
+        <li><a href="#Styleguide">Styleguide</a></li>
+        <li><a href="#Outcomes">Outcomes</a></li>
+        <li><a href="#Reflection">Reflection</a></li>
+        <li><a href="#Credits">Credits</a></li>
+      </ul>
+    </div>
+
+    <div class="page-container">
+
+      <section id="Overview">
+        <div class="h1-baseline">
+          <h1 class="h1-serif">
+            Increasing
+          </h1>
+          <h1 class="h1-sans-serif">
+            Volunteer Recruitment
+          </h1>
+        </div>
+        <div class="section-header">
+          <h2>Overview</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <p>
+                <b>Client:</b> Million Peacemakers<br>
+                <b>Project type:</b> Non-profit landing page<br>
+                <b>Role:</b> UX/UI Designer and WIX site builder<br>
+                <b>Team:</b> UX/UI Designer, Art Director, Design Lead<br>
+                <b>Timeline:</b> 8 weeks ~ Q4 2022<br>
+              </p>
+            </div>
+            <div class="right-column">
+              <p>
+                Million Peacemakers (MP) is a non-profit organization that trains people on how to peacefully resolve
+                conflicts using
+                the Nonflict way. <b>To increase volunteer recruitment and participation in youth workshops, they needed
+                  a website
+                  dedicated to their sub-organization, Million Peacemakers Youth (MPY).</b><br><br>My contributions were
+                UX focused as
+                I worked closely with the design lead to survey the client about pain points and organizational goals.
+                In collaboration
+                with the team, we synthesized findings, revamped the UI with a rebrand, and <b>delivered a website
+                  that’s design assets
+                  were easily transferrable to their main website. </b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Context">
+        <div class="section-header">
+          <h2>context</h2>
+          <h3>Converting drop-off visitors to nonflict volunteers</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>The problem and objective</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Million Peacemakers didn’t have a dedicated place to promote their growing sub-organization, MPY.
+                <b>Since they couldn’t
+                  find the information they needed, potential youth volunteers left the website without joining the
+                  cause.</b>
+                <br><br>
+                Research, strategize, and design an experience to <b>help young adults understand the Nonflict way, and
+                  the benefits of
+                  joining MPY, converting them to youth volunteers and workshop participants.</b>
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/ProblemObjective.jpg">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Empathize">
+        <div class="section-header">
+          <h2>empathize</h2>
+          <h3>Uncovering key audiences and client goals with few resources</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Client goals</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                We lacked understanding about MP’s needs and users, and without a budget for user research, we surveyed
+                the client to
+                uncover who their key audiences are and what their goals are for the coming years.
+              </p>
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/handshake.svg" alt="">
+                </div>
+                <p class="body-large">Recruit more youth volunteers to help run their increasing number of workshops.
+                </p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/chart-line.svg" alt="">
+                </div>
+                <p class="body-large">Multiply participation in youth workshops.</p>
+              </div>
+
+              <div class="icon-card">
+                <div class="icon">
+                  <img src="img/megaphone.svg" alt="">
+                </div>
+                <p class="body-large">Create exposure, traffic, and momentum for Million Peacemakers Youth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Conceptualize">
+        <div class="section-header">
+          <h2>Conceptualize</h2>
+          <h3>How can we convert them?</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Benchmarking and wireframing</h4>
+            </div>
+            <div class="right-column">
+              <p>After benchmarking landing page structures of popular non-profit websites, we found their best methods
+                of conversion
+                were through <b>incorporating social proof, short and sweet breakdowns, genuine imagery, and
+                  approachable
+                  calls-to-action, and used those insights to create a wireframe.</b></p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/Conceptualize.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Design">
+        <div class="section-header">
+          <h2>Design</h2>
+          <h3>Aligning on a new visual direction</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Stylescape</h4>
+            </div>
+            <div class="right-column">
+              <p>With an 8 week timeline, we had to work fast to sell the client on our concept, reducing rounds of
+                feedback and
+                preventing any delays in delivery. <b>We created a stylescape—a collaged mood board of sorts—which
+                  presented colours,
+                  website elements, icons, and photography as a holistic vision</b> for the client to greenlight before
+                moving onto a
+                mock-up.
+                <b>Please turn on your volume for all videos to listen to the rationale</b>.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899643471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Stylescape">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Deliver">
+        <div class="section-header">
+          <h2>Deliver</h2>
+          <h3>Turning the everyday hero into a global peacemaker</h3>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Doing a lot with a little</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Without a budget for developers, we took this as an opportunity to maximize the capabilities of design
+                and upskill by
+                learning how to use a site builder. Additionally, the new visual identity had to be transferable to
+                their main site, and
+                sustainable after handoff, so <b>I worked in WIX to implement a responsive design with transferable
+                  components.</b>
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899643471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Deliver">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Eye-catching hero</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                The flowing line draws a user’s attention from the headline to the captivating image of a young
+                volunteer.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/EyeCatchingHero.jpg" alt="">
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Short and Sweet Breakdowns</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                To prevent overwhelming users, important information about MPY’s culture, method of conflict resolution,
+                impact, and benefits of joining are broken down into easily digestible sections.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/SweetBreakdowns.jpg" alt="">
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Persuading With Social Proof</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                Testimonials and youth stories are front and center to inspire site visitors while giving them an idea
+                of
+                what to expect from volunteering.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/SocialProof.jpg" alt="">
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Approachable Calls-To-Action</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                We start with low commitment CTAs to build up to the main CTA, which asks users to become a youth
+                volunteer. A distinct blue section further down the page highlights the benefits of joining, but the CTA
+                button is also in the navigation menu for easy access at all times.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/ApproachableCTAs.jpg" alt="">
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Opportunities to Engage</h4>
+            </div>
+            <div class="right-column">
+              <p>
+                The client emphasized that the contact form generated numerous opportunities on their main site, so it
+                was
+                crucial to include it on the youth site too.
+              </p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="img/MPY/Engage.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Styleguide">
+        <div class="section-header">
+          <h2>Styleguide</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>A rebrand that’s easy to customize and expand</h4>
+            </div>
+            <div class="right-column">
+              <p>The components I created in WIX are easy to use, customize, and transfer, empowering the client to
+                continue building
+                autonomously. MP has already rebranded their main site and social media accordingly.</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="responsive-iframe">
+              <iframe
+                src="https://player.vimeo.com/video/899643498?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Styleguide">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Outcomes">
+        <div class="section-header">
+          <h2>Outcomes</h2>
+          <h3>Exceeding expectations with kindness and heart</h3>
+        </div>
+        <div class="columns">
+          <div class="left-column">
+            <h4>Here’s what our clients had to say</h4>
+          </div>
+          <div class="right-column">
+            <div class="icon-card">
+              <div class="icon">
+                <img src="img/quote.svg" alt="">
+              </div>
+              <p class="body-large">Their professionalism, passion and creativity made it such a pleasure to
+                co-create with them and the end results
+                exceeded all expectations.</p>
+              <p>- Stephen Hecht (Founder)</p>
+            </div>
+
+            <div class="icon-card">
+              <div class="icon">
+                <img src="img/quote.svg" alt="">
+              </div>
+              <p class="body-large">We’re pleased with not only the quality of work, but how you delivered it. You
+                under-promised and over-delivered, and
+                you did it with kindness and heart. Thank you on behalf of our team.</p>
+              <p>- Jonathan Moyal (Board Member)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Reflection">
+        <div class="section-header">
+          <h2>Reflection</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <h4>Make the most of what you got</h4>
+            </div>
+            <div class="right-column">
+              <p>“An educated assumption is still a valid reason.” That’s what my UX lead said to me when I asked how I
+                should justify
+                design decisions without a budget to conduct research with primary users. The constraint compelled me to
+                be resourceful
+                by benchmarking existing non-profit websites and making the most of information provided by the client.
+              </p>
+              <div class="hover">
+                <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-green">
+                  Contact me for an in-depth case study presentation
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M19.1276 5.89008L19.1455 14.8771C19.1455 15.1653 19.0375 15.4174 18.8574 15.5975C18.6773 15.7776 18.4251 15.8857 18.137 15.8857C17.5607 15.8857 17.1104 15.4355 17.1104 14.8592V8.33949L6.5925 18.8573C6.19628 19.2536 5.54791 19.2536 5.15169 18.8573C4.75547 18.4612 4.75547 17.8128 5.15169 17.4165L15.6696 6.89864H9.1139C8.53761 6.89865 8.08734 6.44839 8.08734 5.87207C8.08734 5.29575 8.53761 4.84549 9.1139 4.84549L18.1009 4.8635C18.6773 4.8635 19.1455 5.33177 19.1276 5.89008Z"
+                      fill="#5D8243" />
+                  </svg> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section id="Credits">
+        <div class="section-header">
+          <h2>Credits</h2>
+        </div>
+        <div class="content-container">
+          <div class="columns">
+            <div class="left-column">
+              <p>
+                <b>UX/UI Designers:</b> Robyn Dang (me), Elena Rodriguez<br>
+                <b>Wix Developer:</b> Robyn Dang<br>
+                <b>Art Director:</b> Gregory Maslov<br>
+                <b>Design Lead:</b> Henk van Dijke<br>
+                <b>Content Strategist:</b> Kate Bundy<br>
+                <b>PM:</b> Olha Davdovych<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! NEXT CASE STUDY !!!!!!!!!!--->
+  <div class="next-case-study hover">
+    <div class="next-cs-thumbnail">
+      <img src="img/McGillDHB/MGL-Thumbnail.jpg" alt="">
+    </div>
+    <a href="McGillDHB.html">
+      <span class="footer-cs-serif">Visualizing</span>
+      <span class="footer-cs-sans">Housing Data</span>
+    </a>
+    <div class="arrow-icon">
+      <svg width="180" height="auto" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M62.3176 101.059L93.0568 65.7471H16.9708V58.2528H93.1838L62.3176 22.9408H72.0982L107.029 61.9365L72.0982 101.059H62.3176Z"
+          fill="#202020" />
+      </svg>
+    </div>
+  </div>
+
+  <!--!!!!!!!!!! FOOTER !!!!!!!!!!--->
+  <div class="footer" id="footer">
+    <div class="footer-large-text">
+      <p class="footer-sans-black">Let's connect</p>
+      <div class="hover">
+        <a href="mailto:robyn.lou.dang@gmail.com" class="footer-baseline">
+          <div class="footer-email">
+            <span class="footer-sans-white" padding-bottom="16px">robyn.l.dang</span>
+            <span class="footer-serif">@gmail.com</span>
+          </div>
+          <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M53.2733 17.0699C53.2733 25.401 43.7275 34.0403 38 34.0403C32.2725 34.0403 22.7267 25.401 22.7267 17.0699C22.7267 8.73884 32.2725 0.0995789 38 0.0995789C43.7275 0.0995789 53.2733 8.73884 53.2733 17.0699Z"
+              fill="white" />
+            <path
+              d="M53.2733 58.9301C53.2733 67.2612 43.7275 75.9004 38 75.9004C32.2725 75.9004 22.7267 67.2612 22.7267 58.9301C22.7267 50.599 32.2725 41.9597 38 41.9597C43.7275 41.9597 53.2733 50.599 53.2733 58.9301Z"
+              fill="white" />
+            <path
+              d="M58.9301 53.2733C50.599 53.2733 41.9597 43.7275 41.9597 38C41.9597 32.2725 50.599 22.7267 58.9301 22.7267C67.2612 22.7267 75.9004 32.2725 75.9004 38C75.9004 43.7275 67.2612 53.2733 58.9301 53.2733Z"
+              fill="white" />
+            <path
+              d="M17.0699 53.2733C8.73883 53.2733 0.0995633 43.7275 0.0995636 38C0.0995638 32.2725 8.73883 22.7267 17.0699 22.7267C25.401 22.7267 34.0402 32.2725 34.0402 38C34.0402 43.7275 25.401 53.2733 17.0699 53.2733Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="hover">
+        <a href="https://www.linkedin.com/in/robyndang/" target="_blank" class="button-ghost-white">
+          LinkedIn
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+      <div class="hover">
+        <a href="https://drive.google.com/file/d/1tBFEi5O9QRtVIHv6xPkEQexWCgGxGB01/view?usp=sharing" target="_blank"
+          class="button-ghost-white">
+          Resume
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.6276 5.89008L19.6455 14.8771C19.6455 15.1653 19.5375 15.4174 19.3574 15.5975C19.1773 15.7776 18.9251 15.8857 18.637 15.8857C18.0607 15.8857 17.6104 15.4355 17.6104 14.8592V8.33949L7.0925 18.8573C6.69628 19.2536 6.04791 19.2536 5.65169 18.8573C5.25547 18.4612 5.25547 17.8128 5.65169 17.4165L16.1696 6.89864H9.6139C9.03761 6.89865 8.58734 6.44839 8.58734 5.87207C8.58734 5.29575 9.03761 4.84549 9.6139 4.84549L18.6009 4.8635C19.1773 4.8635 19.6455 5.33177 19.6276 5.89008Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <small>©Copyright 2024 Robyn Dang ~ Designed and coded by yours truly</small>
+  </div>
+
+
+  <!--Linking to JavaScript here-->
+  <!-- <script src="scripts/butter.js"></script> -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
