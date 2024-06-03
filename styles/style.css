@@ -892,7 +892,10 @@ section {
 }
 
 .full-column {
+  display: flex;
+  flex-direction: column; 
   width: 100%;
+  gap: clamp(16px, 1.5vw, 24px);
 }
 
 .icon-card {
