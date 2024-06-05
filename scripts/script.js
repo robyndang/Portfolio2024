@@ -1,3 +1,9 @@
+/* LOADING PAGE */
+window.addEventListener("load", function() {
+  const loadcontainer = document.querySelector(".loadcontainer");
+  loadcontainer.className += " hidden";
+});
+
 /*NAVIGATION MENU*/
 let lastScrollTop = 0;
 
