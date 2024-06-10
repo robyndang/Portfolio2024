@@ -394,7 +394,7 @@ small {
 }
 
 .button-green:hover {
-  background-color: var(--brand-hover);
+  background-color: var(--brand);
   transition: background-color 300ms ease;
 }
 
