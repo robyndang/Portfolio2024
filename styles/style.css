@@ -716,18 +716,30 @@ body {
 }
 
 .hero-body {
-  flex: 1;
-  max-width: calc(25% - 10px);
-  text-align: center;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 10px);
+  text-align: left;
+  justify-content: center;
+  align-items: center;
   margin: 0 5px;
+  gap: 8px;
+}
+
+.hero-body small {
+  width: 80%;
 }
 
 .hero-body {
   z-index: 2;
 }
 
-.hero-body img,
+.hero-body img {
+  width: 10%;
+  height: auto;
+  box-shadow: none;
+}
+
 #flex-header-monet img {
   max-width: 100%;
   height: auto;
