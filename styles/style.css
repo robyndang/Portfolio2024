@@ -120,6 +120,66 @@
   }
 }
 
+/* PASSWORD PROTECTION */
+.password-body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: var(--cream); /* Adjust background color as needed */
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.password-button-green {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--white);
+  font-family: var(--sans-serif), sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-base);
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--link);
+  border-radius: var(--button);
+  padding: 16px 32px;
+  box-shadow: 5px 5px 10px rgba(40, 42, 43, 0.10);
+}
+
+.password-button-green:hover {
+  background-color: var(--brand);
+  transition: background-color 300ms ease;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 /*FONTS*/
 h1,
 h2,
