@@ -11,35 +11,33 @@ body {
   /* Font sizes */
   /*headers*/
   --font-size-XL-h1: clamp(72px, 10vw + 50px, 180px);
-  --font-size-h1: clamp(40px, 3vw + 35px, 98px);
-  --font-size-h2: clamp(16px, 1.5vw + 10px, 22px);
-  --font-size-h3: clamp(30px, 3vw + 14px, 44px);
-  --font-size-h4: clamp(20px, 2vw + 10px, 30px);
+  --font-size-h1: clamp(40px, 3vw + 30px, 90px);
+  --font-size-h2: clamp(16px, 1.5vw + 8px, 20px);
+  --font-size-h3: clamp(25px, 1.5vw + 15px, 38px);
+  --font-size-h4: clamp(22px, 1vw + 10px, 24px);
   /*body*/
-  --font-size-base: clamp(16px, 1.5vw + 8px, 20px);
-  --font-size-small: clamp(12px, 1vw + 4px, 14px);
-  --font-size-large: clamp(18px, 2vw + 6px, 24px);
+  --font-size-base: clamp(14px, 1vw + 8px, 16px);
+  --font-size-small: clamp(12px, 1vw + 6px, 14px);
+  --font-size-large: clamp(18px, 1vw + 10px, 20px);
   /*button*/
   --font-size-side-menu: clamp(12px, 1vw + 2px, 14px);
-  --font-size-nav: clamp(20px, 2.5vw + 10px, 30px);
-  --font-size-nav-underline: clamp(12px, 1vw + 2px, 14px);
+  --font-size-nav: clamp(22px, 1vw + 15px, 24px);
+  --font-size-nav-underline: clamp(10px, 1vw + 4px, 12px);
   /*footer*/
-  --font-size-footer: clamp(40px, 3vw + 35px, 98px);
-  --font-size-footer-cs: clamp(25px, 2vw + 25px, 88px);
-
-
+  --font-size-footer: clamp(40px, 3vw + 30px, 90px);
+  --font-size-footer-cs: clamp(25px, 2vw + 25px, 70px);
 
   /* Line height */
   /*headers*/
   --line-height-XL-h1: clamp(75px, 10vw, 100px);
   --line-height-h1: clamp(48px, 5.5vw, 100px);
   --line-height-h2: auto;
-  --line-height-h3: clamp(40px, 4vw, 66px);
-  --line-height-h4: clamp(30px, 3vw, 45px);
+  --line-height-h3: clamp(32px, 4.2vw, 48px);  
+  --line-height-h4: clamp(26px, 3vw, 32px); 
   /*body*/
-  --line-height-base: clamp(28px, 2.8vw, 34px);
-  --line-height-small: auto;
-  --line-height-large: clamp(32px, 3.2vw, 40px);
+  --line-height-base: clamp(24px, 1.7vw, 26px);
+  --line-height-small: auto; 
+  --line-height-large: clamp(28px, 1.8vw, 30px); 
   /*button*/
   --line-height-side-menu: auto;
   --line-height-nav: auto;
