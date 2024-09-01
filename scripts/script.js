@@ -1,21 +1,4 @@
 // Password protection handling
-// document.addEventListener('DOMContentLoaded', function () {
-//     const links = document.querySelectorAll('.hover a, .menu-item a, .flex-fullspan-HOME a');
-
-//     links.forEach(link => {
-//         link.addEventListener('click', function (event) {
-//             const href = link.getAttribute('href');
-//             const protectedPages = ['McGillDHB.html', 'EWDesignSystem.html', 'MPY.html'];
-
-//             if (protectedPages.includes(href)) {
-//                 event.preventDefault();
-//                 // Redirect to password.html where the user will enter the password
-//                 window.location.href = 'password.html?redirect=' + encodeURIComponent(href);
-//             }
-//         });
-//     });
-// });
-// Password protection handling
 document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('.hover a, .menu-item a, .flex-fullspan-HOME a');
     
@@ -176,24 +159,6 @@ function parallax(e) {
     layer.style.transform = `translate(${x}px, ${y}px)`;
   });
 }
-
-/*SET DEFAULT VIDEO SPEED TO 1.25X*/
-  document.addEventListener('DOMContentLoaded', function() {
-    // Select all iframes within .responsive-iframe
-    const iframes = document.querySelectorAll('.responsive-iframe iframe');
-
-    iframes.forEach(iframe => {
-      // Create a new Vimeo Player instance
-      const player = new Vimeo.Player(iframe);
-
-      // Set the playback speed to 1.25x
-      player.setPlaybackRate(1.25).then(function(speed) {
-        console.log(`Playback speed set to ${speed}`);
-      }).catch(function(error) {
-        console.error(`Failed to set playback speed: ${error.name}`);
-      });
-    });
-  });
 
 /*HOVER EFFECT*/
 document.addEventListener('DOMContentLoaded', function () {
