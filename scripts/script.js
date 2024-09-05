@@ -1,21 +1,21 @@
-// Password protection handling
-document.addEventListener('DOMContentLoaded', function () {
-    const links = document.querySelectorAll('.hover a, .menu-item a, .flex-fullspan-HOME a');
+// // Password protection handling
+// document.addEventListener('DOMContentLoaded', function () {
+//     const links = document.querySelectorAll('.hover a, .menu-item a, .flex-fullspan-HOME a');
     
-    links.forEach(link => {
-        link.addEventListener('click', function (event) {
-            const href = link.getAttribute('href');
-            const protectedPages = ['McGillDHB.html', 'EWDesignSystem.html', 'MPY.html'];
+//     links.forEach(link => {
+//         link.addEventListener('click', function (event) {
+//             const href = link.getAttribute('href');
+//             const protectedPages = ['McGillDHB.html', 'EWDesignSystem.html', 'MPY.html'];
 
-            // Exclude links inside next-case-study
-            if (protectedPages.includes(href) && !link.closest('.next-case-study')) {
-                event.preventDefault();
-                // Redirect to password.html where the user will enter the password
-                window.location.href = 'password.html?redirect=' + encodeURIComponent(href);
-            }
-        });
-    });
-});
+//             // Exclude links inside next-case-study
+//             if (protectedPages.includes(href) && !link.closest('.next-case-study')) {
+//                 event.preventDefault();
+//                 // Redirect to password.html where the user will enter the password
+//                 window.location.href = 'password.html?redirect=' + encodeURIComponent(href);
+//             }
+//         });
+//     });
+// });
 
 
 // LOADING PAGE
